@@ -1,0 +1,306 @@
+
+function caseStudiesAnimation() {
+    var projectDiv = document.querySelectorAll('.cases-project');
+
+
+    projectDiv.forEach( function(elem) {
+    
+        elem.addEventListener('mouseenter', function () {
+            
+            // console.log(elem.childNodes[5])
+    
+            gsap.to(elem.childNodes[1], {  
+                height: '2px',
+                backgroundColor: 'white',
+                duration: 0.5,
+                ease: 'power.out'
+            })
+    
+            // gsap.to(elem.childNodes[5], {  
+            //     height: '2px',
+            //     backgroundColor: 'white',
+            //     duration: 0.5,
+            //     ease: 'power.out'
+            // })
+    
+        });
+    
+    
+        elem.addEventListener('mouseleave', function () {
+            
+            // console.log(elem.childNodes[1])
+    
+            gsap.to(elem.childNodes[1], {  
+                height: '0.5px',
+                backgroundColor: '#3d3d3d',
+                duration: 0.5,
+                ease: 'power.in'
+            })
+    
+        });
+    
+        
+    });
+
+    var caseContent = document.querySelectorAll('.cases-content');
+    var caseContentImg = document.querySelectorAll('.cases-content img');
+    var contentPara = document.querySelectorAll('.cases-content p');
+
+    caseContent.forEach( function(elements) {
+
+        var imgDiv = elements.childNodes[3]
+        var contentPara = elements.childNodes[1]
+        console.log(imgDiv)
+        console.log(contentPara)
+
+        elements.addEventListener('mouseenter', function() {
+            gsap.to(imgDiv, {  
+                // height: '100%',
+                // scaleY: -1.67,
+                duration: 0.5
+            });
+
+            gsap.to(contentPara, {
+                opacity: 0,
+                duration: 0.5
+            })
+            gsap.to(caseContentImg, {
+                transform: 'translateY(0px)',
+                transformOrigin: 'bottom center'
+            })
+            
+        });
+
+        
+        imgDiv.addEventListener('mouseleave', function() {
+            gsap.to(imgDiv, {  
+                // height: '60%',
+                // scaleY: 1,
+                duration: 0.5
+            });
+
+            gsap.to(contentPara, {
+                opacity: 1,
+                duration: 0.5
+            })
+            gsap.to(caseContentImg, {
+                transform: 'translateY(20px)',
+                transformOrigin: 'top center'
+            })
+        });
+
+    });
+
+    caseContentImg.forEach( function(elements) {
+
+        var imgDiv = elements.childNodes[3]
+        var contentPara = elements.childNodes[1]
+        // // console.log(imgDiv)
+        // // console.log(contentPara)
+
+        elements.addEventListener('mouseenter', function() {
+            gsap.to(caseContentImg, {  
+                transform: 'translateY(20px)',
+                duration: 0.5
+            });
+
+            gsap.to(caseContent, {  
+                height: '100%',
+                duration: 0.5
+            });
+
+            gsap.to(contentPara, {
+                opacity: 0,
+                duration: 0.5
+            })
+            
+        });
+
+        
+        elements.addEventListener('mouseleave', function() {
+            gsap.to(caseContentImg, {  
+                transform: 'translateY(0px)',
+                duration: 0.5
+            });
+            gsap.to(caseContent, {  
+                height: '60%',
+                duration: 0.5
+            });
+            gsap.to(contentPara, {
+                opacity: 1,
+                duration: 0.5
+            })
+        });
+
+    });
+}
+
+
+// function caseStudiesAnimation() {
+//     var projectDiv = document.querySelectorAll('.cases-project');
+
+
+//     projectDiv.forEach( function(elem) {
+    
+//         elem.addEventListener('mouseenter', function () {
+            
+//             // console.log(elem.childNodes[5])
+    
+//             gsap.to(elem.childNodes[1], {  
+//                 height: '2px',
+//                 backgroundColor: 'white',
+//                 duration: 0.5,
+//                 ease: 'power.out'
+//             })
+    
+//         });
+    
+    
+//         elem.addEventListener('mouseleave', function () {
+            
+//             // console.log(elem.childNodes[1])
+    
+//             gsap.to(elem.childNodes[1], {  
+//                 height: '0.5px',
+//                 backgroundColor: '#3d3d3d',
+//                 duration: 0.5,
+//                 ease: 'power.in'
+//             })
+    
+//         });
+    
+        
+//     });
+
+//     var caseContent = document.querySelectorAll('.cases-content');
+//     var caseContentImg = document.querySelectorAll('.cases-content img');
+//     var contentPara = document.querySelectorAll('.cases-content p');
+
+//     caseContent.forEach( function(elements) {
+
+//         var imgDiv = elements.childNodes[3]
+//         var contentPara = elements.childNodes[1]
+//         console.log(imgDiv)
+//         console.log(contentPara)
+
+//         elements.addEventListener('mouseenter', function() {
+//             gsap.to(imgDiv, {  
+//                 // height: '100%',
+//                 // scaleY: -1.67,
+//                 duration: 0.5
+//             });
+
+//             gsap.to(contentPara, {
+//                 opacity: 0,
+//                 duration: 0.5
+//             })
+//             gsap.to(caseContentImg, {
+//                 transform: 'translateY(0px)',
+//                 transformOrigin: 'bottom center'
+//             })
+            
+//         });
+
+        
+//         imgDiv.addEventListener('mouseleave', function() {
+//             gsap.to(imgDiv, {  
+//                 // height: '60%',
+//                 // scaleY: 1,
+//                 duration: 0.5
+//             });
+
+//             gsap.to(contentPara, {
+//                 opacity: 1,
+//                 duration: 0.5
+//             })
+//             gsap.to(caseContentImg, {
+//                 transform: 'translateY(20px)',
+//                 transformOrigin: 'top center'
+//             })
+//         });
+
+//     });
+
+//     caseContentImg.forEach( function(elements) {
+
+//         // var imgDiv = elements.childNodes[3]
+//         // var contentPara = elements.childNodes[1]
+//         // console.log(imgDiv)
+//         console.log(contentPara)
+
+//         elements.addEventListener('mouseenter', function() {
+//             gsap.to(caseContentImg, {  
+//                 transform: 'translateY(20px) scale(1.1)',
+//                 duration: 0.5
+//             });
+
+//             gsap.to(caseContent, {  
+//                 height: '100%',
+//                 duration: 0.5
+//             });
+
+//             gsap.to(contentPara, {
+//                 opacity: 0,
+//                 duration: 0.5
+//             })
+            
+//         });
+
+        
+//         elements.addEventListener('mouseleave', function() {
+//             gsap.to(caseContentImg, {  
+//                 transform: 'translateY(-20px) scale(1)',
+//                 duration: 0.5
+//             });
+//             gsap.to(caseContent, {  
+//                 height: '60%',
+//                 duration: 0.5
+//             });
+//             gsap.to(contentPara, {
+//                 opacity: 1,
+//                 duration: 0.5
+//             })
+//         });
+
+//     });
+// }
+
+
+
+
+
+
+
+
+
+// var caseContent = document.querySelectorAll('.cases-content');
+// var caseContentImg = document.querySelectorAll('.cases-content img');
+// var contentPara = document.querySelectorAll('.cases-content p');
+
+
+
+
+
+// caseContent.addEventListener('mouseenter', function () {
+//     gsap.to(caseContentImg, {
+//         transform: 'translateY(0px)',
+//         duration: 1,
+//         ease: 'power.out'
+//     })
+//     gsap.to(contentPara, {
+//         opacity: 0,
+//         duration: 1
+//     })
+
+// })
+// caseContent.addEventListener('mouseleave', function () {
+//     gsap.to(caseContentImg, {
+//         transform: 'translateY(150px)',
+//         duration: 0.5,
+//         ease: 'power.in'
+//     })
+//     gsap.to(contentPara, {
+//         opacity: 1,
+//         duration: 1
+//     })
+// })

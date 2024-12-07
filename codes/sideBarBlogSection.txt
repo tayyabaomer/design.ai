@@ -1,0 +1,109 @@
+            <!-- Blog Section -->
+            <div class="blogSectionSM">
+                <div class="blogSectionMain">
+                    <div class="blogContainer">
+                        <figure>
+                            <img src="../assets/images/projects-img/e06879b6-ce65-4ebb-b9e3-90cd7af21f93.webp" alt="">
+                        </figure>
+                        <div class="blogContentMain">
+                            <span></span>
+                            <div class="blogContent">
+                                <h5>Power Of Digital Product Design For <br> Series A Funding</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><path fill="currentColor" d="M8 5h9v9h-2V9h-1v1h-1v1h-1v1h-1v1h-1v1H9v1H8v1H7v-1H6v-1h1v-1h1v-1h1v-1h1v-1h1V9h1V8h1V7H8z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            
+/* Blog Section Starts Here */
+.blogSectionSM {
+    width: 100%;
+    padding-bottom: 7vw;
+    /* background-color: #0DA34E; */
+}
+
+.blogSectionMain {
+    display: flex;
+    align-items: flex-start;
+    justify-content: end;
+    /* background-color: #2D349F; */
+}
+
+.blogContainer {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.3vw;
+    /* background-color: #046217; */
+    transition-property: transform background-color height;
+    transition: 0.5s ease-in-out;
+}
+
+.blogContainer figure {
+    height: 15vh;
+    width: 20%;
+    overflow: hidden;
+}
+
+.blogContainer figure img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition-property: transform;
+    transition: 0.5s ease-in-out;
+}
+
+.blogContent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 100%;
+    margin-top: 0.8vw;
+}
+
+.blogContent h5 {
+    font-size: 1vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.05;
+}
+
+.blogContentMain {
+    position: relative;
+    width: 70%;
+}
+
+.blogContentMain span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.5px;
+    width: 100%;
+    background-color: var(--border-light-gray);
+    transition-property: background-color height;
+    transition: 0.5s ease-in-out;
+}
+
+.blogContainer:hover span {
+    height: 2px;
+    background-color: var(--border-medium-gray);
+}
+
+.blogContainer:hover figure img {
+    transform: scale(1.1);
+}
+
+.blogContent svg {
+    transition: transform 0.5s ease-in-out;
+}
+
+.blogContainer:hover .blogContent svg {
+    transform: translateX(-5px);
+}

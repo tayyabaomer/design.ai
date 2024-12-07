@@ -1,0 +1,34 @@
+/* Button follow style */
+.action .action-button {
+    position: absolute; top: 0; left: 0;
+    overflow: hidden;
+    text-transform: uppercase;
+    border-radius: 50%;
+    height: 11vw;
+    width: 11vw;
+    background-color: #0DA34E;
+    font-size: 1vw;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2vw;
+    /* scale: 0;
+    opacity: 0; */
+    color: inherit;
+    cursor: pointer;
+    z-index: 22;
+}
+
+.action-button .svg {
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+.action-button svg {
+    height: 1.5em;
+    width: 1.5em;
+}

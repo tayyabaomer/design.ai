@@ -1,0 +1,122 @@
+
+    <!-- Starts Page 3 here parallax animation -->
+    <section class="parallax-wrapper">
+        <div class="parallax-group" id="intro">
+            <!-- <div class="parallax-bg"></div>
+            <div class="content">
+                <h2>Golden Standard In UX + AI</h2>
+                <div class="subcontent">
+                    Look, we’ve been designing AI experiences since 2017, and we’re not just dabbling in it; 
+                    <span>
+                        we’re dominating. We’ve tackled Adtech, Salestech, Fintech, Legaltech, Media — you name it. 
+                    </span>
+                    <br>
+                    <br>
+                    Want to see how we do it?
+                </div>
+                <a href="#">Check our UX + AI Innovations here <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><path fill="currentColor" d="M8 5h9v9h-2V9h-1v1h-1v1h-1v1h-1v1h-1v1H9v1H8v1H7v-1H6v-1h1v-1h1v-1h1v-1h1v-1h1V9h1V8h1V7H8z"/></svg></a>
+            </div> -->
+        </div>
+
+        <div class="parallax-group" id="group-1">
+            <div class="parallax-layer base-layer">base-layer</div>
+            <div class="parallax-layer mid-layer">mid-layer</div>
+        </div>
+        <div class="parallax-group" id="group-2">
+            <div class="parallax-layer mid-layer">mid-layer</div>
+            <div class="parallax-layer top-layer">top-layer</div>
+        </div>
+
+        <div class="parallax-group outro-screen" id="outro">
+            The end
+        </div>
+    </section>
+    <!-- Ends Page 3 here parallax animation -->
+    
+
+
+
+    
+const parallaxBg = document.querySelector('.parallax-bg');
+
+gsap.to(parallaxBg, {
+    y: '2%',
+    ease: 'none',
+    scrollTrigger: {
+        trigger: '.parallax-outer',
+        scroller: 'body',
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: true
+    }
+})
+
+gsap.to('.parallax-section', {
+    // rotationY: 0.2,
+    ease: 'none',
+    scrollTrigger: {
+        trigger: '.parallax-outer',
+        scroller: 'body',
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: true
+    }
+})
+
+
+// var btnpin = document.querySelector('page5-btn-p .design');
+
+// gsap.from('page5', {
+//     scrollTrigger: {
+//         trigger: btnpin,
+//         scroller: 'body',
+//         markers: true,
+//         start: 'top 0%',
+//         end: 'top 100%',
+//         pin: true,
+//         scrub: 1
+//     }
+// })
+
+
+
+
+gsap.from('.pics-container .img', {
+    // transform:  perspective(500px) rotateY(15deg) rotateX(8deg);
+    perspective: '-500px',
+    rotateY: '-15deg',
+    rotateX: '-8deg',
+    opacity: 0,
+    scrollTrigger: {
+        trigger: '.pics-container',
+        scroller: 'body',
+        scrub: true,
+        markers: true,
+        start: 'top bottom',
+        end: 'top top'
+    }
+})
+
+
+
+
+// var membersImg = document.querySelectorAll('.pics-container .img');
+
+// membersImg.forEach( function(elem) {
+//     gsap.from(elem, {
+//         // transform:  perspective(500px) rotateY(15deg) rotateX(8deg);
+//         perspective: '-500px',
+//         rotateY: '-15deg',
+//         rotateX: '-8deg',
+//         opacity: 0,
+//         scrollTrigger: {
+//             trigger: '.page6-1 .img',
+//             scroller: '.pics-container',
+//             scrub: true,
+//             markers: true,
+//             start: 'top 100%',
+//             end: 'top 0%'
+//         }
+//     })
+// })
+

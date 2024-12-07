@@ -1,0 +1,13 @@
+                    <div class="blogContainer">
+                        <figure>
+                            <img src="./assets/images/news&articles/blogImg1.webp" alt="">
+                        </figure>
+                        <div class="blogContentMain">
+                            <span></span>
+                            <div class="blogContent">
+                                <h5>Power Of Digital Product Design For <br> Series A Funding</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><path fill="currentColor" d="M8 5h9v9h-2V9h-1v1h-1v1h-1v1h-1v1h-1v1H9v1H8v1H7v-1H6v-1h1v-1h1v-1h1v-1h1v-1h1V9h1V8h1V7H8z"/></svg>
+                            </div>
+                            <a class="articleBtn" href="#">Articles</a>
+                        </div>
+                    </div>

@@ -1,0 +1,103 @@
+<hr class="zig">
+<hr class="zag">
+
+<!-- forked from http://blog.eliacontini.info/post/42743847160/notes-on-css3-box-with-zig-zag-border*/ -->
+
+
+
+hr.zig, hr.zag {
+  border: none;
+  height: 30px;
+  margin: 0 50px;
+}
+
+hr.zig{
+  background: linear-gradient(-135deg, #FFF 20px, rgba(0, 0, 0, 0) 0) 0 5px, linear-gradient(135deg, #FFF 20px, rgba(0, 0, 0, 0) 0) 0 5px;
+  background-color: rgba(0, 0, 0, 0);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  background-size: 20px 40px;
+  z-index: 100;
+  position: relative;
+}
+
+hr.zag {
+  background: linear-gradient(-135deg, #333 20px, rgba(0, 0, 0, 0) 0) 0 5px, linear-gradient(135deg, #333 20px, #FFF 0) 0 5px;
+  background-color: rgba(0, 0, 0, 0);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  background-size: 20px 40px;
+  z-index: 50;
+  margin-top: -28px;
+}
+
+
+
+
+
+
+
+
+From Google
+<hr class="zigzag-ruler"> 
+
+.zigzag-ruler {
+
+  border: none;
+
+  height: 1px;
+
+  background-color: black; /* Set your desired color */
+
+  margin: 0;
+
+  padding: 0;
+
+  position: relative;
+
+}
+
+
+
+.zigzag-ruler::before,
+
+.zigzag-ruler::after {
+
+  content: ""; 
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background-color: black; /* Same color as the line */
+
+  border-bottom: 1px solid transparent; /* Create the zigzag effect */
+
+}
+
+
+
+.zigzag-ruler::before {
+
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%); 
+
+  transform: skewX(-45deg);
+
+}
+
+
+
+.zigzag-ruler::after {
+
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%); 
+
+  transform: skewX(45deg); 
+
+}
+
