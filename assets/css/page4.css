@@ -1,0 +1,280 @@
+@import url(./style.css);
+
+
+/* starts services section here */
+.services {
+    width: 100%;
+    /* height: 150vh; */
+    /* background-color: yellow; */
+    background-color: var(--primary-black-color);
+}
+
+.services-main {
+    width: 100%;
+    /* min-height: 150vh; */
+    position: relative;
+    /* background-color: red; */
+    padding: var(--section-paddingTB) var(--section-paddingLF);
+}
+
+.page4-top {
+    height: 45vh;
+    width: 100%;
+    /* background-color: #046217; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid var(--border-dark-gray);
+}
+
+.page4-top > span {
+    width: 28%;
+}
+
+.page4-top .p {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: inherit;
+    width: 72%;
+    line-height: 0.8;
+    /* background-color: #0C0F43; */
+}
+
+/* this block of code is for JS */
+.servicesHeadOne, 
+.servicesHeadTwo,
+.servicesHeadThree {
+    padding-top: 1rem;
+    overflow: hidden;
+    /* border: 1px solid white; */
+}
+
+.servicesHeadOne h4,
+.servicesHeadTwo h4,
+.servicesHeadThree h4 {
+    /* border: 2px solid white; */
+    font-size: 5vw;
+    font-weight: 500;
+
+}
+
+.servicesHeadOne h4 span,
+.servicesHeadTwo h4 span,
+.servicesHeadThree h4 span {
+    display: inline-block;
+}
+
+/* the above block of code is for JS */
+
+
+/* Page4 Starts here */
+.page4 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding-top: 5vw;
+    position: relative;
+    /* background-color: #4F5BFF; */
+}
+
+.parallax-btn {
+    width: 28%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* background-color: #046217; */
+}
+
+/* .parallax-btn */
+.page4 button {
+    cursor: pointer;
+    position: sticky;
+    top: 20%;
+}
+
+.services-box {
+    position: relative;
+    width: 72%;
+    /* background-color: #046217; */
+}
+
+/* services title part */
+.srevices-title {
+    padding-bottom: 5vw;
+}
+
+.srevices-title p {
+    font-size: 2.2vw;
+}
+
+.services-float {
+    font-size: 0.9vw;
+    font-weight: 500;
+    float: left;
+    width: 18vw;
+    padding-top: 0.5rem;
+}
+
+/* click to open dropdown services */
+/* .services-box-main {
+} */
+
+.services-head {
+    padding: 1.5vw 0;
+    border-top: 1px solid var(--border-dark-gray);
+}
+
+.services-head h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services-head h4 .subTitleContent, 
+.services-head h4 .subTitleContent-2 {
+    font-size: 3vw;
+}
+
+/* This block of COde is for JS */
+.subTitle,
+.subTitle-2 {
+    overflow: hidden;
+    padding-top: 0.2rem;
+    /* border: 1px solid white; */
+}
+
+.subTitleContent span,
+.subTitleContent-2 span {
+    display: inline-block;
+}
+
+.services-head h4 svg {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.services-categories {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw 0 ;
+}
+
+.services-categories h5 {
+    border-radius: 50px;
+    border: 1px solid var(--border-medium-gray);
+    font-size: 0.75vw;
+    text-transform: uppercase;
+    padding: 0.5vw 1vw;
+}
+
+.sub-services {
+    cursor: pointer;
+}
+
+.services-content-hidden {
+    height: 130vh;
+    /* visibility: hidden; */
+}
+
+.services-list {
+    padding-top: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 1.5px solid var(--border-dark-gray);
+    position: relative;
+    width: 100%;
+    height: 20%;
+    /* background-color: #046217; */
+    overflow: hidden;
+}
+
+.services-list .services-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    height: 100%;
+    width: 100%;
+    background-color: rgba(147, 147, 147, 0.261);
+}
+
+.services-list h5 {
+    white-space: nowrap;
+    width: 25%;
+    text-transform: capitalize;
+    font-size: 1.8vw;
+    font-weight: 300;
+    z-index: 22;
+    transition: padding-left 0.5s ease-in;
+}
+
+.services-list p {
+    width: 50%;
+    font-size: 1.1vw;
+    font-weight: 300;
+    z-index: 23;
+}
+
+.services-list svg {
+    width: 5%;
+    font-size: 0.8em;
+    transition: padding-right 0.5s ease-in;
+    z-index: 25;
+}
+
+
+
+/* details tag */
+/* details {
+    height: 50vh;
+    width: 100%;
+    background-color: #046217;
+} */
+
+details{
+    transition: height 0.5s ease-in-out;
+}
+
+::marker {
+    content: '';
+}
+
+
+
+/* MEDIA QUERY MOBILE DEVICES */
+@media screen and (max-width: 767px) {
+
+.services-main {
+    padding: 3vw;
+}
+
+.page4-top {
+    height: 40vh;
+}
+
+/* Page4 Starts here */
+.page4 {
+    padding-top: 3vw;
+}
+
+
+/* this block of code is for JS */
+.servicesHeadOne, 
+.servicesHeadTwo,
+.servicesHeadThree {
+    padding-top: 1vw;
+    /* border: 1px solid white; */
+}
+
+
+.services-content-hidden {
+    height: 50vh;
+}
+
+
+}

@@ -1,0 +1,97 @@
+@import url(./style.css);
+
+
+
+/* Css for parallax effect */
+.parallax-wrapper {
+    background:
+    linear-gradient(
+        to bottom right,
+        var(--dark-blue),
+        var(--light-blue) 
+    );
+    height: 100vh;
+    width: 100%;
+    perspective: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* parallax-group intro-screen
+parallax-layer base-layer
+parallax-layer mid-layer
+parallax-layer top-layer
+parallax-group outro-screen */
+
+
+.intro-screen {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.outro-screen {
+    background-color: #0DA34E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+}
+
+.parallax-layer {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    inset: 0;
+}
+
+.base-layer {
+    /* scale calculation 1 +  ((Z transform value * -1) / perspective) */
+    transform: translateZ(-20px) scale(1.1);
+    
+}
+
+.mid-layer {
+    transform: translateZ(0px);
+}
+
+.top-layer {
+    /* scale calculation 1 +  ((Z transform value * -1) / perspective) = 1 + (-0.7) */
+    transform: translateZ(100px) scale(0.3);
+}
+
+#intro{
+    z-index: 0;
+}
+
+#group-1{
+    z-index: -1;
+}
+
+#group-1 > .base-layer {
+    background-color: crimson;
+    
+    height: 50vh;  
+}
+
+#group-2{
+    z-index: 1;
+    height: 50vh;  
+}
+
+#group-2 > .mid-layer {
+    background-color: yellowgreen;
+}
+
+/* #outro{
+
+} */
+

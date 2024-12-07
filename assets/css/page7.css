@@ -1,0 +1,198 @@
+@import url(./style.css);
+
+
+
+
+
+/* Page7 starts  */
+.action {
+    background: var(--primary-black-color);
+    height: 75vh;
+    width: 100%;
+    position: relative;
+}
+
+
+.action-container {
+    background-image: url(../images/section-images/d06118da-8135-4f99-8700-ba8dbde9c586.webp),
+                        url(../images/section-images/7eb2f615-1e74-47cf-91b5-a7290c17c17d.webp);
+    height: inherit;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    padding: 7vw var(--section-paddingLF);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+}
+
+
+/* left side starts */
+.action-left {
+    width: 72%;
+    /* border: 1px solid white; */
+}
+
+.action-left img {
+    float: left;
+    height: 7vw;
+    width: 7vw;
+    margin-right: 2rem;
+    /* border: 1px solid white; */
+    margin-top: 0.5rem;
+}
+
+.action-left h2 {
+    text-transform: uppercase;
+    font-size: 9vw;
+    font-weight: bold;
+    /* border: 1px solid white; */
+    line-height: 1;
+}
+/* left side end */
+
+
+/* right side starts */
+.action-right {
+    width: 28%;
+    height: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+}
+
+.arrow-pencil {
+    /* border: 1px solid white; */
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.arrow-pencil > svg{
+    /* border: 1px solid white; */
+    font-size: 9vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* scale: 1; */
+    opacity: 1;
+    margin-top: -3vw;
+    margin-right: -3vw;
+}
+
+.arrow-pencil svg:nth-child(2) {
+    /* border: 1px solid white; */
+    font-size: 6vw;
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    /* scale: 0; */
+    opacity: 0;
+    /* margin-top: -3vw;
+    margin-right: -3vw; */
+}
+
+/* .action-subtext {
+        border: 1px solid white;
+} */
+
+.action-subtext p{
+    text-align: right;
+    font-weight: 400;
+    font-size: 1.4vw;
+        /* border: 1px solid white; */
+}
+
+/* right side end */
+
+
+/* Button follow style */
+.action .action-button {
+    position: absolute; top: 0; left: 0;
+    overflow: hidden;
+    text-transform: uppercase;
+    border-radius: 50%;
+    height: 11vw;
+    width: 11vw;
+    background-color: #0DA34E;
+    font-size: 1vw;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2vw;
+    scale: 0;
+    opacity: 0;
+    color: inherit;
+    cursor: pointer;
+    z-index: 22;
+}
+
+.action-button .svg {
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+.action-button svg {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+
+/* Page7 ends  */
+
+
+
+
+/* MEDIA QUERY MOBILE DEVICES */
+@media screen and (max-width: 767px) {
+
+    /* Page7 starts  */
+.action {
+    height: 60vh;
+}
+
+
+.action-container {
+    padding: 4vw 3vw;
+    /* border: 1px solid white; */
+}
+
+
+/* left side starts */
+.action-left {
+    width: 72%;
+    /* border: 1px solid white; */
+}
+
+.action-left img {
+    height: 5vw;
+    width: 5vw;
+    margin-right: 1rem;
+}
+
+.action-left h2 {
+    font-size: 7vw;
+}
+/* left side end */
+
+
+.arrow-pencil > svg{
+    font-size: 7vw;
+}
+
+.action-subtext p{
+    font-size: 2vw;
+}
+
+
+}

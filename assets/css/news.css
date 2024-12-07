@@ -1,0 +1,710 @@
+@import url(./style.css);
+
+
+
+/* Global Style for Anchor Button */
+.articleBtn {
+    border-radius: 15px;
+    background-color: var(--border-light-gray);
+    padding: 0.4vw 1.1vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.9vw;
+    transition-property: color background-color;
+    transition: 0.4s ease-in-out;
+}
+
+.articleBtn span {
+    background-color: transparent;
+}
+
+.articleBtn:hover {
+    color: var(--white-color);
+    background-color: var(--primary-black-color);
+}
+
+
+.newsBoardSection {
+    width: 100%;
+    background-color: var(--white-color);
+    color: var(--primary-black-color);
+}
+
+.newsBoardSection a {
+    color: var(--primary-black-color);
+}
+
+.newsTitleMain {
+    padding: 0 var(--section-paddingLF);
+    padding-top: 10vw;
+    padding-bottom: 3vw;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsPageTitle {
+    overflow: hidden;
+}
+
+.newsPageTitle h2 {
+    line-height: 1.1;
+    font-size: 6vw;
+    font-weight: 500;
+}
+
+/* Tat data comes from Js */
+.newsPageTitle h2 span {
+    display: inline-block;
+}
+
+.newsTitleSubContent {
+    width: 32%;
+}
+
+.newsTitleSubContent p {
+    font-size: 1.2vw;
+}
+
+
+/* News Board Styling */
+.newsBoardMain {
+    padding: 0 var(--section-paddingLF);
+    padding-bottom: 2vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.newsLeftArea {
+    width: 65%;
+}
+
+.newsLeftArea figure {
+    overflow: hidden;
+}
+
+.newsLeftArea figure img {
+    height: 45vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease-in-out;
+}
+
+.newsLeftArea:hover figure img{
+    transform: scale(1.1);
+}
+
+
+/* Title and Svg */
+.newsBoardTitle {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1.5vw 0;
+}
+
+.newsBoardTitle h3 {
+    font-size: 3.2vw;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.newsBoardTitle svg {
+    font-size: 1.5vw;
+    transition: transform 0.4s ease-in-out;
+}
+
+.newsBoardTitle:hover svg{
+    transform: translateX(-7px);
+}
+
+.newsBoardDetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #4F5BFF; */
+    padding: 1.3vw 0;
+}
+
+.newsWriterMain {
+    border: 0.5px solid var(--border-light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.9vw;
+    border-radius: 45px;
+    /* background-color: #046217; */
+}
+
+.writerContent {
+    padding-left: 1vw;
+}
+
+.writerContent .writeP {
+    font-weight: 500;
+    font-size: 1vw;
+    color: #666666;
+}
+
+.writerContent .writeP2 {
+    font-weight: 500;
+    font-size: 1vw;
+    color: #aaaaaa;
+}
+
+.newsWriterMain img {
+    height: 6vh;
+    width: 6vh;
+    border-radius: 50%;
+}
+
+.newsWriterMain .publishDate {
+    font-weight: 500;
+    font-size: 1vw;
+    padding-left: 5vw;
+    color: #666666;
+}
+
+.newsBoardAction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+    /* background-color: red; */
+    width: 32%;
+}
+
+.newsBoardAction span {
+    height: 1px;
+    width: 60%;
+    background-color: var(--border-light-gray);
+}
+
+.newsBoardAction p {
+    flex-shrink: 0;
+}
+
+/* Writer info and about blog */
+
+
+
+
+/* Blog Section Title CSS */      
+/* Blog Section Starts Here */
+
+.newsRightArea {
+    width: 32%;
+}
+
+.blogContainer {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.3vw;
+    /* background-color: #046217; */
+    transition-property: transform background-color height;
+    transition: 0.5s ease-in-out;
+    padding-bottom: 1vw;
+}
+
+.blogContainer figure {
+    height: 13vh;
+    width: 30%;
+    overflow: hidden;
+}
+
+.blogContainer figure img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition-property: transform;
+    transition: 0.5s ease-in-out;
+}
+
+.blogContent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 100%;
+    margin-top: 0.8vw;
+    padding-bottom: 1vw;
+}
+
+.blogContent h5 {
+    font-size: 1vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.05;
+}
+
+.blogContentMain {
+    position: relative;
+    width: 70%;
+}
+
+.blogContentMain span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.5px;
+    width: 100%;
+    background-color: var(--border-light-gray);
+    transition-property: background-color height;
+    transition: 0.5s ease-in-out;
+}
+
+.blogContainer:hover span {
+    height: 2px;
+    background-color: var(--border-medium-gray);
+}
+
+.blogContainer:hover figure img {
+    transform: scale(1.1);
+}
+
+.blogContent svg {
+    transition: transform 0.5s ease-in-out;
+}
+
+.blogContainer:hover .blogContent svg {
+    transform: translateX(-5px);
+}
+
+
+/* News Cards Blog */
+.newsSectionCards {
+    width: 100%;
+    color: var(--primary-black-color);
+    background-color: var(--white-color);
+    /* background-color: red; */
+}
+
+.newsCardsMain {
+    padding: 0 var(--section-paddingLF);
+    /* background-color: green; */
+}
+
+.newsLinkTab {
+    border-top: 0.5px solid var(--border-light-gray);
+    padding-top: 7vw;
+    padding-bottom: 3.5vw;
+}
+
+.newsLinkTab a {
+    font-size: 1.1vw;
+    padding: 0.9vw 1.5vw;
+}
+
+.newsLinkTab .active {
+    background-color: var(--primary-black-color);
+    color: var(--white-color);
+}
+
+.articleBtn2 {
+    font-size: 1vw;
+    padding: 0.8vw 1.8vw;
+    border-radius: 25px;
+    margin-left: 0.6vw;
+}
+
+.newsSectionCards a {
+    color: var(--primary-black-color);
+}
+
+
+/* Cards Section Starts */
+.newsTopCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr; */
+    gap: 1.5vw;
+    /* background-color: greenyellow; */
+}
+
+.newsCards {
+    padding-bottom: 5vw;
+}
+
+#newsCardsTop1 figure img{
+    height: 60vh;
+}
+
+#newsCardsTop2 figure img {
+    height: 30vh;
+}
+
+#newsCardsTop3 figure img {
+    height: 40vh;
+}
+
+.newsCards figure {
+    position: relative;
+    overflow: hidden;
+}
+
+/* .newsCards figure:hover img {
+    transform: scale(1.05);
+} */
+
+.blogLinks span{
+    /* background-color: red; */
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    /* background-color: var(--border-light-gray); */
+    padding: 0.6vw 1.1vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.7vw;
+    color: var(--white-color);
+}
+
+.articleBtn2 {
+    background-color: var(--white-color);
+    padding: 0.6vw 1.1vw;
+    font-size: 0.9vw;
+}
+
+.newsCards .blogLinks {
+    position: absolute;
+    top: 1vw;
+    left: 0.5vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.newsCards h2 {
+    font-size: 1.6vw;
+    font-weight: 500;
+    line-height: 1.1;
+    padding: 2vw 0;
+}
+
+.newsCards figure img{
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.newsCardBottom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1vw;
+    padding: 1.2vw 0;
+}
+
+.newsCardBottom img {
+    height: 6vh;
+    width: 6vh;
+    border-radius: 50%;
+}
+
+.newsCardContent p {
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.writersubTitle {
+    color: #999999;
+}
+
+
+/* Bottom navigation styling */
+
+/* Page button design */
+
+.cases-bottom {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+}
+
+.back-forward-link {
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 0.4vw;
+    border-radius: 50px;
+    margin-bottom: 1.2vw;
+}
+
+.case-arrow {
+    background-color: var(wh);
+    padding: 0.6vw 1vw;
+    border-radius: 50%;
+}
+
+.arrow-backward {
+    background-color: #f6f6f6;
+    color: #efefef ;
+}
+
+.arrow-forward {
+    background-color: var(--white-color);
+}
+
+.case-arrow svg {
+    font-size: 0.5vw;
+}
+
+.cases-projects-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 0.2vw;
+    border-radius: 50px;
+    margin: 0 1.5vw;
+    background-color: var(--white-color);
+}
+
+.cases-projects-number > .cases-page {
+    background-color: var(--green-primary);
+    padding: 0.4vw 0.9vw;
+    border-radius: 50%;
+    color: var(--white-color);
+}
+
+.cases-projects-number .cases-page:nth-child(2),
+.cases-projects-number .cases-page:nth-child(3),
+.cases-projects-number .cases-page:nth-child(4),
+.cases-projects-number .cases-page:nth-child(5)
+ {
+    background-color: var(--white-color);
+    padding: 0.4vw 0.9vw;
+    border-radius: 50%;
+    color: var(--primary-black-color);
+}
+
+
+.cases-bottom p {
+    font-size: 1vw;
+    color: var(--border-medium-gray);
+}
+
+
+/* MEDIA QUERY FOR  */
+@media screen and (max-width: 767px) {
+    
+/* Global Style for Anchor Button */
+.articleBtn {
+    font-size: 0.5rem;
+}
+
+.newsTitleMain {
+    padding: 0 3vw;
+    padding-top: 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 3vw;
+}
+
+.newsTitleSubContent {
+    width: 50%;
+}
+
+.newsTitleSubContent p {
+    padding-top: 2vw;
+    font-size: 0.8rem;
+}
+
+
+/* News Board Styling */
+.newsBoardMain {
+    padding: 0 3vw;
+    padding-bottom: 2vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.newsLeftArea {
+    width: 100%;
+    padding-bottom: 3vw;
+}
+
+.newsLeftArea figure img {
+    height: 40vh;
+}
+
+
+.newsBoardTitle svg {
+    font-size: 2.2vw;
+}
+
+
+.writerContent .writeP {
+    font-size: 2vw;
+}
+
+.writerContent .writeP2 {
+    font-size: 1.5vw;
+}
+
+.newsWriterMain .publishDate {
+    font-size: 1.5vw;
+}
+
+.newsBoardAction p {
+    font-size: 0.8rem;
+}
+
+/* Writer info and about blog */
+
+
+
+
+/* Blog Section Title CSS */      
+/* Blog Section Starts Here */
+
+.newsRightArea {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+}
+
+.blogContent h5 {
+    font-size: 1.8vw;
+}
+
+.blogContent svg {
+    font-size: 2.2vw;
+}
+
+
+.newsCardsMain {
+    padding: 0 3vw;
+}
+
+.newsLinkTab a {
+    font-size: 2vw;
+}
+
+.newsSectionCards a {
+    font-size: 1.5vw;
+}
+
+
+/* Cards Section Starts */
+.newsTopCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5vw;
+}
+
+.newsCards {
+    padding-bottom: 5vw;
+}
+
+.blogLinks span{
+    font-size: 1vw;
+}
+
+.articleBtn2 {
+    font-size: 1vw;
+}
+
+.newsCards h2 {
+    font-size: 2.2vw;
+}
+
+.newsCardContent p {
+    font-size: 1.5vw;
+}
+
+
+/* Bottom navigation styling */
+
+/* Page button design */
+
+.cases-bottom {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+}
+
+.back-forward-link {
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 0.4vw;
+    border-radius: 50px;
+    margin-bottom: 1.2vw;
+}
+
+.case-arrow {
+    background-color: var(wh);
+    padding: 0.6vw 1vw;
+    border-radius: 50%;
+}
+
+.arrow-backward {
+    background-color: #f6f6f6;
+    color: #efefef ;
+}
+
+.arrow-forward {
+    background-color: var(--white-color);
+}
+
+.case-arrow svg {
+    font-size: 0.5vw;
+}
+
+.cases-projects-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 0.2vw;
+    border-radius: 50px;
+    margin: 0 1.5vw;
+    background-color: var(--white-color);
+}
+
+.cases-projects-number > .cases-page {
+    background-color: var(--green-primary);
+    padding: 0.4vw 0.9vw;
+    border-radius: 50%;
+    color: var(--white-color);
+}
+
+.cases-projects-number .cases-page:nth-child(2),
+.cases-projects-number .cases-page:nth-child(3),
+.cases-projects-number .cases-page:nth-child(4),
+.cases-projects-number .cases-page:nth-child(5)
+ {
+    background-color: var(--white-color);
+    padding: 0.4vw 0.9vw;
+    border-radius: 50%;
+    color: var(--primary-black-color);
+}
+
+
+.cases-bottom p {
+    font-size: 1.5vw;
+}
+
+}

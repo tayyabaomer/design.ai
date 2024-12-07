@@ -1,0 +1,282 @@
+@import url(../style.css);
+
+
+
+.cases-container {
+    min-height: 300vh;
+    width: 100%;
+    background-color: var(--primary-black-color);
+    border-bottom: 0.5px solid var(--border-dark-gray);
+}
+
+.cases-main {
+    padding: 0 var(--section-paddingLF);
+    padding-top: 10vw;
+}
+
+/* Title Style */
+.cases-title {
+    padding-top: 2vw;
+    overflow: hidden;
+    /* border: 1px solid white; */
+}
+
+.cases-title h2 {
+    text-transform: uppercase;
+    font-size: 9vw;
+    line-height: 1;
+    /* border: 1px solid white; */
+}
+
+.cases-title h2 span {
+    display: inline-block;
+}
+
+/* Main area designing */
+.cases-projects-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 5vw;
+    /* align-items: start;
+    justify-content: start; */
+    /* align-content: start; */
+    padding-top: 6vw;
+}
+
+.cases-project {
+    /* background-color: lightblue; */
+    position: relative;
+    cursor: pointer;
+    height: 80vh;
+    margin-bottom: 7vw;
+}
+
+.cases-project:hover svg {
+    transform: translateY(-2px);
+    scale: 1.1;
+}
+
+.cases-rule {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.5px;
+    background-color: var(--border-dark-gray);
+    width: 100%;
+}
+
+/* Images and paragraph styling */
+.cases-content {
+    /* background-color: red; */
+    overflow: hidden;
+    height: 80%;
+    width: 100%;
+    position: relative;
+    /* object-position: center;
+    object-fit: cover; */
+}
+
+.cases-project-title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2vw;
+    margin-top: 1.5vw;
+    margin-bottom: 5vw;
+    transition: transform 0.5s ease-in-out;
+    /* background-color: #afb1cf; */
+}
+
+.cases-project-title h3 {
+    font-size: 2.5vw;
+    font-weight: 300;
+    /* background-color: #4F5BFF; */
+}
+
+/* .cases-subcontent {
+    position: absolute;
+    bottom: 70%;
+    left: 0;
+    background-color: #046217;
+} */
+
+.cases-img p {
+    position: absolute;
+    font-size: 1.5vw;
+    line-height: 1;
+    /* background-color: #046217; */
+}
+
+
+/* Styling images */
+.cases-img {
+    position: relative;
+    bottom: 0%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: #4F5BFF; */
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    transform-origin: center center;
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.cases-img img {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    object-fit: cover;
+    /* aspect-ratio: 2/1.5; */
+    object-position: center;
+    transform-origin: center;
+    /* transform: scaleY(1); */
+    width: 130%;
+    height: 100%;
+    transform: translateY(40%);
+}
+
+
+
+
+/* Page button design */
+
+.cases-bottom {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+}
+
+.back-forward-link {
+    background-color: rgba(102, 102, 102, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 0.4vw;
+    border-radius: 50px;
+    margin-bottom: 1.2vw;
+}
+
+.case-arrow {
+    background-color: var(--primary-black-color);
+    padding: 0.6vw 1vw;
+    border-radius: 50%;
+}
+
+.arrow-backward {
+    background-color: #2b2929;
+}
+
+.case-arrow svg {
+    font-size: 0.5vw;
+}
+
+.cases-projects-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 0.2vw;
+    border-radius: 50px;
+    margin: 0 1.5vw;
+    background-color: var(--primary-black-color);
+}
+
+.cases-projects-number > .cases-page {
+    background-color: var(--green-primary);
+    padding: 0.4vw 0.9vw;
+    border-radius: 50%;
+}
+
+.cases-projects-number .cases-page:nth-child(2),
+.cases-projects-number .cases-page:nth-child(3)
+ {
+    background-color: var(--primary-black-color);
+    padding: 0.4vw 0.9vw;
+    border-radius: 50%;
+}
+
+
+.cases-bottom p {
+    font-size: 1vw;
+    color: var(--border-medium-gray);
+}
+
+
+
+/* MEDIA QUERY FOR TABLET */
+@media screen and (max-width: 767px) {
+
+.cases-main {
+    padding: 0 3vw;
+    padding-top: 8vw;
+}
+
+.cases-title h2 {
+    font-size: 7vw;
+}
+
+/* Main area designing */
+.cases-projects-main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-top: 6vw;
+}
+
+.cases-project {
+    height: 50vh;
+}
+
+.cases-project-title h3 {
+    font-size: 4.5vw;
+}
+
+.cases-img p {
+    font-size: 2.5vw;
+}
+
+
+/* Page button design */
+
+.cases-bottom {
+    padding: 3vw;
+}
+
+.back-forward-link {
+    width: 50%;
+    padding: 0.4vw;
+}
+
+.case-arrow {
+    background-color: var(--primary-black-color);
+    padding: 0.6vw 1.8vw;
+    border-radius: 50%;
+}
+
+.case-arrow svg {
+    font-size: 1.2vw;
+}
+
+.cases-projects-number {
+    width: 60%;
+    height: fit-content;
+    margin: 0 1.5vw;
+}
+
+.cases-projects-number > .cases-page {
+    padding: 0.2vw 2vw;
+}
+
+.cases-projects-number .cases-page:nth-child(2),
+.cases-projects-number .cases-page:nth-child(3)
+ {
+    padding: 0.2vw 2vw;
+}
+
+}

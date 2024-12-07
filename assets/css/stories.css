@@ -1,0 +1,122 @@
+@import url(./style.css);
+
+
+
+.stories {
+    width: 100%;
+    background-color: var(--white-color);
+    color: var(--primary-black-color);
+}
+
+.stories-main {
+    padding: 8rem var(--section-paddingLF);
+}
+
+.stories-top {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.stories-left {
+    width: 50%;
+}
+
+.StHead h2 {
+    font-size: 3.2vw;
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+/* For title Animation with JS */
+.StHead {
+    overflow: hidden;
+    /* border: 1px solid black; */
+}
+
+.StHead h2 span {
+    display: inline-block;
+}
+/* end For title Animation with JS */
+
+.stories-right {
+    width: 50%;
+}
+
+.stories-content h3 {
+    padding-bottom: 2.5vw;
+    color: var(--border-medium-gray);
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.stories-content {
+    margin-bottom: 4vw;
+}
+
+.stories-content p {
+    line-height: 1.3;
+    width: 40ch;
+    color: var(--primary-black-color);
+    font-size: 1.5rem;
+}
+
+.stories-bottom {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.8rem;
+}
+
+.stories-cards {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+}
+
+.stories-title {
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+.stories-sub-content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.stories-sub-content p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #949494;
+}
+
+
+/* MEDIA QUERY FOR MOBILE */
+@media screen and (max-width: 767px) {
+
+
+.stories-main {
+    padding: 3vw;
+}
+
+.stories-top {
+    height: 55vh;
+}
+
+.stories-content p {
+    font-size: 2vw;
+}
+
+.stories-bottom {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+}

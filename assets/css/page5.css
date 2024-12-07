@@ -1,0 +1,300 @@
+@import url(./style.css);
+
+
+
+
+/* Design Process section starts here */
+/* main section setup */
+.page5 {
+    width: 100%;
+    min-height: 100vh;
+    padding: var(--section-paddingTB) var(--section-paddingLF);
+    background-color: var(--white-color);
+    color: var(--primary-black-color);
+    padding-bottom: 15vh;
+}
+
+a {
+    color: var(--white-color);
+}
+
+
+/* top page setup */
+.heading{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1.5vw 0;
+    border-bottom: 0.5px solid var(--border-extra-light-gray);
+}
+
+.heading > span{
+    width: 28%;
+}
+
+.heading .h2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: inherit;
+    width: 72%;
+    /* background-color: #0C0F43; */
+    padding: 3vw 0;
+}
+
+.h2Wrapper,
+.h2Wrapper2 {
+    /* border: 1px solid black; */
+    padding-top: 0.2rem;
+    overflow: hidden;
+}
+
+.h2Wrapper h2,
+.h2Wrapper2 h2 {
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 6vw;
+    /* border: 1px solid black; */
+}
+
+/* This block of code will work with JS */
+.h2Wrapper h2 span,
+.h2Wrapper2 h2 span {
+    display: inline-block;
+} 
+
+
+/* Lower part of top side */
+.page5-btn-p {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 3.5vw;
+}
+
+.design{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue-btn-color);
+    /* padding: 2.4vh 2.2vw; */
+    border-radius: 50px;
+    width: 22%;
+    height: 8.5vh;
+    cursor: pointer;
+}
+
+.design a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.design a:nth-child(2) {
+    transform: scaleY(0);
+}
+
+.design a > span {
+    font-size: 1vw;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.page5-right {
+    width: 72%;
+}
+
+.page5-right p {
+    width: 66%;
+    font-size: 1.7vw;
+    font-weight: 300;
+    padding-bottom: 5vw;
+}
+
+
+
+
+/* Page6 Bottom animation */
+.page5-bottom {
+    height: 50vh;
+    width: 100%;
+    border-top: 0.5px solid var(--border-extra-light-gray);
+    /* background-color: #4F5BFF; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.bttm-pt1 {
+    width: 28%;
+}
+.bttm-pt2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 72%;
+}
+
+.bttm-elements {
+    /* width: 25%; */
+    position: relative;
+    padding-left: 0.2rem;
+    /* border-left: 0.5px solid var(--border-extra-light-gray); */
+}
+
+.bttm-elements h5 {
+    font-size: 1.05vw;
+    font-weight: 500;
+    padding-top: 4vh;
+    padding-bottom: 6vh;
+    line-height: 1.2;
+}
+
+.bttm-elements h4 {
+    border-radius: 50px;
+    color: var(--white-color);
+    font-size: 0.95vw;
+    font-weight: 300;
+    padding: 0.6rem 0.4rem;
+    margin-bottom: 0.15rem;
+    background-color: var(--primary-black-color);
+}
+
+.bttm-elements h4 span {
+    margin-right: 0.7rem;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    background-color: var(--border-dark-gray);
+}
+
+.bttm-pt2 .part1 {
+    width: 53%;
+}
+
+.bttm-pt2 .part1 h4 {
+    width: 65%;
+}
+
+.bttm-pt2 .part2 {
+    width: 30%;
+}
+
+.bttm-pt2 .part2 h4 {
+    width: 90%;
+}
+
+.bttm-pt2 .part3 {
+    width: 35%;
+}
+
+.bttm-pt2 .part3 h4 {
+    /* z-index: 100; */
+    width: 85%;
+}
+
+.bttm-pt2 .part4 {
+    width: 20%;
+}
+
+
+/*css for scrolling animation, start from 'from'*/
+.bttm-elements h4:nth-child(3) {
+    transform: translateX(0%);
+}
+.bttm-elements h4:nth-child(4) {
+    transform: translateX(15%);
+}
+.bttm-elements h4:nth-child(5) {
+    transform: translateX(30%);
+}
+.bttm-elements h4:nth-child(6) {
+    transform: translateX(45%);
+}
+.bttm-elements h4:nth-child(7) {
+    transform: translateX(60%);
+}
+.bttm-elements h4:nth-child(8) {
+    transform: translateX(75%);
+}
+
+
+/* border line work with scroll */
+/* Work in span */
+.line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0.5px;
+    background-color: var(--border-light-gray);
+}
+
+/* Design Process section Ends here */
+
+
+@media screen and (max-width: 767px) {
+
+    /* Design Process section starts here */
+/* main section setup */
+.page5 {
+    min-height: 80vh;
+    padding: 3vw;
+    padding-bottom: 5vh;
+}
+
+/* top page setup */
+.heading{
+    flex-direction: row-reverse;
+}
+
+/* Lower part of top side */
+.page5-btn-p {
+    flex-direction: row-reverse;
+}
+
+.design{
+    padding: 2vh 2vw;
+    width: 30%;
+    height: 6vh;
+}
+
+.design a > span {
+    font-size: 1.5vw;
+}
+
+.page5-right {
+    width: 85%;
+}
+
+.page5-right p {
+    font-size: 2vw;
+}
+
+
+
+
+/* Page6 Bottom animation */
+.page5-bottom {
+    height: 50vh;
+}
+
+.bttm-pt1 {
+    width: 0%;
+}
+.bttm-pt2 {
+    width: 100%;
+}
+
+.bttm-elements h5 {
+    font-size: 1.5vw;
+}
+
+.bttm-elements h4 {
+    font-size: 1.2vw;
+}
+
+
+}

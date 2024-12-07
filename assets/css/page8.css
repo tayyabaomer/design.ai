@@ -1,0 +1,332 @@
+@import url(./style.css);
+
+
+
+
+.about-section {
+    background-color: var(--primary-black-color);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.about-main {
+    width: 100%;
+    /* min-height: 150vh; */
+    position: relative;
+    /* background-color: red; */
+    padding: var(--section-paddingTB) var(--section-paddingLF);
+}
+
+.page8-top {
+    height: 45vh;
+    width: 100%;
+    /* background-color: #046217; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid var(--border-dark-gray);
+    /* border: 1px solid white; */
+    /* margin: 5vw 0; */
+    padding: 15vw 0;
+}
+
+.page8-top > span {
+    width: 28%;
+}
+
+.page8-top .about-p {
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: inherit;
+    width: 72%;
+    line-height: 0.8;
+    /* background-color: #0C0F43; */
+}
+
+/* this block of code is for JS */
+.aboutHeadOne, 
+.aboutHeadTwo,
+.aboutHeadThree {
+    padding-top: 1rem;
+    overflow: hidden;
+    /* border: 1px solid white; */
+}
+
+.aboutHeadOne h4,
+.aboutHeadTwo h4,
+.aboutHeadThree h4 {
+    /* border: 2px solid white; */
+    font-size: 5vw;
+    font-weight: 500;
+
+}
+
+.aboutHeadOne h4 span,
+.aboutHeadTwo h4 span,
+.aboutHeadThree h4 span {
+    display: inline-block;
+}
+
+/* the above block of code is for JS */
+
+
+/* Page4 Starts here */
+.page8 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding-top: 5vw;
+    position: relative;
+    /* background-color: #4F5BFF; */
+}
+
+.about-box {
+    position: relative;
+    width: 72%;
+    /* background-color: #046217; */
+}
+
+.about-svg {
+    width: 28%;
+}
+
+
+/* about title part */
+.about-title {
+    padding-bottom: 5vw;
+}
+
+.about-title p {
+    font-size: 2.2vw;
+}
+
+.about-float {
+    font-size: 0.9vw;
+    font-weight: 500;
+    float: left;
+    width: 18vw;
+    padding-top: 0.5rem;
+}
+
+
+/* svg */
+.circleSvg svg{
+    height: 8vw;
+    width: 8vw;
+}
+/* About top ends */
+
+
+
+/* About bottom starts */
+.about-bottom-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    /* border: 1px solid white; */
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.about-right {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about-top-content {
+    margin-bottom: 3rem;
+}
+
+.about-top-content h5{
+    font-size: 1.2vw;
+    font-weight: 500;
+    padding-bottom: 0.3rem;
+}
+
+.about-top-content p {
+    font-size: 1vw;
+}
+
+.about-middle-content {
+    font-size: 2vw;
+}
+
+.about-middle-content h4 {
+    font-size: 2.5vw;
+    font-weight: 300;
+}
+
+.about-middle-content img {
+    height: 4vw;
+    width: 4vw;
+    border-radius: 50%;
+    margin-top: -1.2vw;
+}
+
+.about-bottom-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 3rem;
+    text-align: start;
+    margin-top: 7rem;
+}
+
+
+/* about bottom right content */
+.about-left {
+    width: 35%;
+    /* border: 1px solid white; */
+}
+
+.about-figure {
+    /* border: 1px solid white; */
+    overflow: hidden;
+    width: 100%;
+    height: 80vh;
+}
+
+.about-figure img {
+    /* border: 1px solid white; */
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transition: scale 0.4s ease-in-out;
+    scale: 1;
+}
+
+
+/* horizontal rule */
+
+.about-mid-rule {
+    position: absolute;
+    width: 84%;
+    height: 0.5px;
+    background-color: var(--border-dark-gray);
+}
+
+
+
+
+/* MEDIA QUERY MOBILE DEVICES */
+@media screen and (max-width: 767px) {
+    
+    .about-main {
+        padding: 3vw;
+    }
+    
+    .page8-top {
+        height: 40vh;
+        justify-content: flex-start;
+        flex-direction: row-reverse;
+        padding: 10vw 0;
+    }
+    
+    
+    /* this block of code is for JS */
+    .aboutHeadOne, 
+    .aboutHeadTwo,
+    .aboutHeadThree {
+        padding-top: 0;
+        /* border: 1px solid white; */
+    }
+
+    /* Page4 Starts here */
+    .page8 {
+        flex-direction: row-reverse;
+        gap: 10vw;
+    }
+    
+    
+    .about-title p {
+        font-size: 3vw;
+    }
+    
+    .about-float {
+        font-size: 1.2vw;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5vw;
+    }
+    
+    
+    /* svg */
+    .circleSvg svg{
+        height: 10vw;
+        width: 10vw;
+    }
+    /* About top ends */
+    
+    
+    
+    /* About bottom starts */
+    .about-bottom-container {
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        /* border: 1px solid white; */
+        padding-top: 3vw;
+        margin-bottom: 2rem;
+    }
+    
+    .about-right {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-top-content {
+        margin-bottom: 5vw;
+    }
+    
+    .about-top-content h5{
+        font-size: 1.2vw;
+    }
+    
+    .about-top-content p {
+        font-size: 1.5vw;
+    }
+    
+    .about-middle-content {
+        font-size: 2vw;
+    }
+    
+    .about-middle-content h4 {
+        font-size: 2.5vw;
+        font-weight: 300;
+    }
+    
+    .about-middle-content img {
+        height: 4vw;
+        width: 4vw;
+        border-radius: 50%;
+        margin-top: -1.2vw;
+    }
+    
+    .about-bottom-content {
+        grid-column-gap: 5vw;
+        margin-top: 7vw;
+        padding-bottom: 5vw;
+    }
+    
+    
+    /* about bottom right content */
+    .about-left {
+        width: 100%;
+        /* border: 1px solid white; */
+    }
+
+}

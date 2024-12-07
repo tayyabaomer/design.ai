@@ -1,0 +1,135 @@
+@import url(./style.css);
+
+
+
+/* Page six css title part */
+.page6 {
+    height: 100vh;
+    width: 100%;
+    /* background-color: var(--border-light-gray); */
+    color: var(--primary-black-color);
+    /* color: #2D349F; */
+    position: relative;
+    padding: var(--section-paddingTB) var(--section-paddingLF);
+    /* overflow-x: hidden; */
+    margin: 0;
+}
+
+.page6 .page6Title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 2px solid red; */
+    /* word-wrap: nowrap; */
+}
+
+
+.page6 h2 {
+    flex-shrink: 0;
+    transform: translateX(-50%);
+    font-size: 30vw;
+    font-weight: 500;
+    /* word-wrap: nowrap; */
+    /* width: 500%; */
+    text-transform: uppercase;
+    /* border: 2px solid rgb(13, 0, 255); */
+    letter-spacing: -15px;
+    line-height: 0.8;
+}
+
+
+
+/* Page6 css pictures part */
+.page6-1 {
+    height: 120vh;
+    width: 100%;
+    /* border: 2px solid green; */
+    background-color: var(--primary-black-color);
+    padding: var(--section-paddingTB) var(--section-paddingLF);
+}
+
+.pics-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* border: 2px solid green; */
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+}
+
+.pics-container .container {
+    position: relative;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid rgb(128, 58, 0); */
+    justify-content: center;
+    row-gap: 3rem;
+    column-gap: 5rem;
+    overflow: hidden;
+}
+
+.pics-container img {
+    position: relative;
+    height: 15rem;
+    width: 12rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.pics-container .img {    
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transform:  perspective(500px) rotateY(15deg) rotateX(8deg);
+}
+
+/* .pics-container .img:hover {
+    transform:  perspective(500px) rotateY(15deg) rotateX(10deg);
+} */
+
+.pics-container .container span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2rem;
+    width: 12rem;
+    background-color: #0DA34E;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+
+/* MEDIA QUERY FOR MOBILE */
+@media screen and (max-width: 767px) {
+
+
+/* Page6 css pictures part */
+.page6-1 {
+    height: 90vh;
+}
+
+.pics-container img {
+    height: 20vh;
+    width: 18vw;
+}
+
+/* .pics-container .img:hover {
+    transform:  perspective(500px) rotateY(15deg) rotateX(10deg);
+} */
+
+.pics-container .container span {
+    height: 3vh;
+    font-size: 1.5vw;
+}
+
+    
+}

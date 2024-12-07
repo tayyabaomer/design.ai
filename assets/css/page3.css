@@ -1,0 +1,124 @@
+@import url(./style.css);
+
+
+
+
+/* Css for parallax effect */
+.parallax-wrapper {
+    background:
+    linear-gradient(
+        to bottom right,
+        var(--dark-blue),
+        var(--light-blue) 
+    );
+    height: 100vh;
+    width: 100%;
+    isolation: isolate;
+    z-index: 0;
+}
+
+.parallax-group {
+    background-image: url(../images/section-images/b42bbb10-6bab-4ca5-873b-6801db30ad42.webp);
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    perspective: 1px;
+    padding: var(--section-paddingTB) var(--section-paddingLF);
+}
+
+.parallax-group .content {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.content h2{
+    /* border: 1px solid black; */
+    font-size: 6.2vw;
+    font-weight: 500;
+    line-height: 0.8;
+}
+
+.content .subcontent {
+    font-size: 1.8vw;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.content a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--primary-black-color);
+    background-color: var(--white-color);
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+}
+
+.content svg {
+    margin-left: 1rem;
+}
+
+
+
+
+.content #para-title {
+    padding-top: 3rem;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+
+/* Display inline for span which embeded from js file */
+#para-title span {
+    display: inline-block;
+}
+
+
+
+/* MEDIA QUERY FOR MOBILE SCREEN */
+@media screen and (max-width: 767px) {
+    
+
+/* Css for parallax effect */
+.parallax-wrapper {
+    height: 60vh;
+}
+
+.parallax-group {
+    height: 60vh;
+    padding: 3vw 3vw;
+}
+
+.parallax-group .content {
+    height: 60vh;
+}
+
+.content h2{
+    font-size: 5.5vw;
+}
+
+.content .subcontent {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.content #para-title {
+    padding-top: 2rem;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+
+
+}

@@ -1,0 +1,260 @@
+@import url(../css/style.css);
+
+
+
+
+.projects {
+    width: 100%;
+    background-color: var(--primary-black-color);
+}
+
+.projects-main {
+    padding: 5rem var(--section-paddingLF);
+}
+
+
+/* Project top section starts here */
+.projects-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+}
+
+.projects-top > span {
+    width: 28%;
+}
+
+.projects-top .right {
+    width: 72%;
+}
+
+.right p span {
+    font-size: 0.8rem;
+    color: #767676;
+    font-weight: 500;
+    width: 30%;
+    float: left;
+    padding-bottom: 2rem;
+    /* background-color: #0DA34E; */
+}
+
+.right p {
+    font-size: 2.2rem;
+}
+/* Project top section End here */
+
+
+/*starts Project video section */
+.projects-bottom {
+    width: 100%;
+    /* background-color: #4F5BFF; */
+}
+
+.project-video-container-main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.video-pro-left {
+    padding-top: 1rem;
+    width: 22%;
+    border-top: 1px solid var(--border-dark-gray);
+
+}
+
+.video-pro-left .h5  {
+    overflow: hidden;
+    /* border: 1px solid whitesmoke; */
+}
+
+.video-pro-left .h5 h5 span {
+    display: inline-block;
+}
+
+.video-pro-left h5 {
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+.video-pro-left p {
+    font-size: 1rem;
+    padding: 2rem 0;
+}
+
+/* btn */
+.pro-design {
+    padding: 1rem;
+    width: 100%;
+    /* background-color: yellow;    */
+}
+
+.video-pro-right {
+    padding-top: 1rem;
+    width: 72%;
+    border-top: 2px solid var(--border-dark-gray);
+    isolation: isolate;
+}
+
+.video-pro-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 8rem;
+}
+
+.video-pro-top h2 {
+    flex-shrink: 0;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.video-pro-content p {
+    width: 55ch;
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 1.1;
+}
+
+.video-btn-style {
+    padding-top: 1rem;
+}
+
+/* Video starts here */
+
+.pro-video-container {
+    position: relative;
+    height: 75vh;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.pro-video-container video {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.pro-video-container img {
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+/*End Project video section */
+
+
+/* actionbtn css */
+/* project follow style */
+.pro-video-container .project-button {
+    position: absolute; top: 0; left: 0;
+    overflow: hidden;
+    text-transform: uppercase;
+    border-radius: 50%;
+    height: 11vw;
+    width: 11vw;
+    background-color: var(--blue-btn-color);
+    font-size: 1vw;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2vw;
+    scale: 0;
+    opacity: 0;
+    color: inherit;
+    cursor: pointer;
+    z-index: 22;
+}
+
+.project-button .svg {
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+.project-button svg {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+.projects-main {
+    padding: 3vw;
+}
+
+
+/* Project top section starts here */
+.projects-top {
+    padding-top: 5vw;
+}
+
+.projects-top > span {
+    width: 0;
+}
+
+.projects-top .right {
+    width: 100%;
+}
+
+.right p {
+    font-size: 3vw;
+}
+/* Project top section End here */
+
+
+/*starts Project video section */
+.projects-bottom {
+    width: 100%;
+    /* background-color: #4F5BFF; */
+}
+
+.project-video-container-main {
+    flex-direction: column;
+}
+
+.video-pro-left {
+    width: 50%;
+    padding-bottom: 5vw;
+}
+
+
+/* btn */
+.pro-design {
+    padding: 1rem;
+    width: 100%;
+    /* background-color: yellow;    */
+}
+
+.video-pro-right {
+    width: 100%;
+}
+
+
+/* Video starts here */
+
+.pro-video-container {
+    width: 100%;
+}
+
+/* actionbtn css */
+/* project follow style */
+.pro-video-container .project-button {
+    scale: 0;
+    opacity: 0;
+}
+
+
+}
